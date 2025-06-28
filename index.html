@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NUESTROS 12 AÑOS</title>
+  <style>
+    .audio-player { text-align: center; margin-top: 50px; }
+    .audio-player button {
+      padding: 10px 20px; margin: 10px; font-size: 16px;
+      border: none; border-radius: 5px;
+      background-color: #333; color: white; cursor: pointer;
+    }
+    .audio-player button:hover { background-color: #555; }
+  </style>
+</head>
+<body>
+  <div class="audio-player">
+    <h2 id="titulo">NUESTRA CANCIÓN</h2>
+    <audio id="miAudio" src="images/can.mp3"></audio>
+    <div>
+    
+      <button onclick="playAudio()">Reproducir</button>
+      <button onclick="pauseAudio()"> Pausar</button>
+     
+    </div>
+  </div>
+
+  <script>
+    const audio = document.getElementById('miAudio');
+    const titulo = document.getElementById('titulo');
+
+    const playlist = [
+      { src: 'images/can.mp3', title: 'NUESTRA CANCIÓN' },
+      { src: 'images/can2.mp3', title: 'NUESTRA CANCIÓN' },
+      
+    ];
+    let index = 0;
+
+    function loadTrack(i) {
+      index = (i + playlist.length) % playlist.length;
+      audio.src = playlist[index].src;
+      audio.load();
+      titulo.textContent = playlist[index].title;
+    }
+
+    function playAudio() { audio.play(); }
+    function pauseAudio() { audio.pause(); }
+
+    function nextTrack() {
+      loadTrack(index + 1);
+      audio.play();
+    }
+    function prevTrack() {
+      loadTrack(index - 1);
+      audio.play();
+    }
+
+    audio.addEventListener('ended', nextTrack);
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadTrack(0);
+    });
+  </script>
+</body>
+</html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIVERSARIO NO.12</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="ANIVERSARIO NO.12">
+    <meta name="description"
+        content=">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Nyder74.github.io">
+    <meta property="og:title" content="ANIVERSARIO NO.12">
+    <meta property="og:description"
+        content="">
+    <meta property="og:image" content="https://aNyder74.github¿n.io/images/Cap.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.Nyder74.com/">
+    <meta property="twitter:title" content="ANIVERSARIO NO.12">
+    <meta property="twitter:description"
+        content="">
+    <meta property="twitter:image" content="">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+
+                <h2 class="nav__title" color= rgb(174, 42, 135);">
+  GRACIAS POR TU HERMOSA COMPAÑÍA
+</h2>
+
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>l
+
+        <section class="hero__container container">
+            <h1 class="hero__title">FELIZ ANIVERSARIO #12
+               </p>  TE AMO
+            </h1>
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">12 LARGOS AÑOS DE MI VIDA JUNTO A TI</h2>
+            <p class="about__paragraph"3>Doce años a tu lado han sido la prueba más hermosa de que el amor verdadero existe. Gracias por tu compañía, tu apoyo incondicional y tu lealtad firme como el primer día.
+                </p>Hoy se cumplen doce años desde que decidimos unir nuestros caminos, y no encuentro palabras suficientes para describir lo que significas para mí. Amor, han sido doce años llenos de historias, de aprendizajes, de momentos dulces y también de pruebas, pero sobre todo, de un amor profundo que ha crecido cada día.
+            </p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/3.jpg" class="icono-grande">
+                    <style>
+                        .icono-grande{
+                            width: 200px;
+                            height: 100px;
+                            margin: 0;
+                            padding: 0;
+                        }   
+                    </style>
+                    <h3 class="about__title"> Gracias por ser mi compañera:</h3>
+                    <p class="about__paragrah">
+                         Desde el primer día que te conocí, supe que habías llegado a mi vida en el momento perfecto. 
+                    </p>No solo por ser una buena persona, sino por ser la persona que necesitaba. 
+                    Gracias por llegar en el justo momento, por ser mi compañera, mi amiga, mi confidente y mi amor.
+Gracias por ser mi compañera de vida, por caminar a mi lado en cada etapa, por compartir mis sueños y mis miedos, por ser mi refugio y mi fortaleza. Cada día contigo reafirma lo agradecido que estoy con la vida por haberte puesto en mi camino.
+Gracias por ser mi compañera desde la adolescencia, cuando descubríamos el mundo y nuestra amistad se fue convirtiendo en amor. </p>Hoy, después de todos estos años, compartimos una vida basada en aquella complicidad juvenil, en esos momentos que nos unieron y nos hicieron más fuertes.
+Gracias por ser mi compañera en cada paso, en cada desafío, en cada risa y en cada lágrima. Gracias por tu amor incondicional, por tu paciencia, por tu apoyo constante. Gracias por ser mi todo.
+Te amo con todo mi ser y agradezco cada día que paso a tu lado. Eres mi razón de ser, mi propósito, mi felicidad. Gracias por ser tú, por ser mi compañera, por ser mi amor eterno.
+</p>
+                    </article>
+                        
+
+                <article class="about__icons">
+                      <img src="./images/782471.svg" class="icono-grande">
+                    <style>
+                        .icono-grande{
+                            width: 200px;
+                            height: 100px;
+                            margin: -2;
+                            padding: -2;
+                        }   
+                    </style>
+                   
+                    <h3 class="about__title">Nuestro proceso por 12 años</h3>
+                    <p class="about__paragrah">Mi amor:
+                Hoy quiero agradecerte profundamente por ser mi compañera incondicional durante estos 12 años. 
+</p>Desde que comenzamos este viaje juntos, no todo ha sido fácil, hemos enfrentado desafíos, cometimos errores y atravesamos momentos difíciles. Sin embargo, cada obstáculo nos ha enseñado lecciones valiosas y nos ha fortalecido como pareja.
+Gracias por estar a mi lado en las buenas y en las malas, por elegir quedarte cuando lo más sencillo hubiera sido irse.
+</p> Tu apoyo constante, tu amor y tu comprensión han sido mi refugio y mi fuerza. Gracias por ser mi cómplice, por caminar conmigo en cada paso de este camino.
+Te amo profundamente por todo lo que hemos vivido juntos y por todo lo que aún nos espera. Eres la mejor mujer del mundo, con tu carácter único que te hace incomparable. No sería la misma persona sin ti en mi vida. Gracias a ti, mi vida ha cambiado para mejor.
+
+                       </p>
+                </article>
+
+                <article class="about__icons">
+                      <img src="./images/4.jpg" class="icono-grande">
+                    <style>
+                        .icono-grande{
+                            width: 200px;
+                            height: 100px;
+                            margin: -2;
+                            padding: -2;
+                        }   
+                    </style>
+                    <h3 class="about__title">Nuestro Motor</h3>
+                    <p class="about__paragrah">Desde el momento en que supe que íbamos a ser padres, mi corazón se llenó de una alegría indescriptible. La emoción de tener una hija, una pequeña que llevaría una parte de nosotros, me parecía el regalo más hermoso que la vida podía ofrecernos. Y cuando finalmente llego, con tus ojitos brillantes y esa sonrisa que ilumina todo a su alrededor, supe que mi vida había cambiado definitivamente ya no era solo yo éramos 3 ahora, algo que fue un reto que por supuesto me asuste, pero logramos salir adelante siendo ella el motor de nuestra relación.
+Tenerla a ella, es el regalo más hermoso que la vida nos ha dado. Es tan única, especial, y cada día a tu lado es una bendición. A través de ella hemos aprendido a ver el mundo con otros ojos, a valorar los pequeños momentos y a encontrar lo hermoso que es la vida.
+En nuestros días difíciles, cuando venimos cansados y las preocupaciones son parte de nuestro estrés diario, al llegar a casa y ver correr hacia nosotros a esa hermosa hija siendo tan amorosa con esa energía y alegría que solo ella posee, todo se ilumina. Su risa, sus ocurrencias, su forma de ver la vida nos llenan el corazón de una felicidad que no sabíamos que existía. Es nuestra fuente de inspiración, nuestro motor, la razón por la que seguimos adelante con una sonrisa, incluso en los momentos más complicados.
+Doy gracias a Dios porque sea nuestra hija, porque nos enseña cada día el verdadero significado del amor incondicional. Gracias por llenar nuestra vida de luz, de amor y de esperanza. Es nuestro mayor tesoro, y no hay palabras suficientes para expresar lo agradecidos que estamos por tenerla en nuestras vidas. LAS AMO.
+ 
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Una Hermosa Historia</h2>
+                    <p class="knowledge__paragraph">Desde el primer instante que te vi, supe que eras la protagonista de mi historia de amor eterno. Enfrentarme a tu belleza fue como descubrir un paisaje nuevo, hermoso y cautivador. Ahora cada mañana que despierto a tu lado es un sueño hecho realidad.
+Con el paso del tiempo, nuestro amor ha ido ensamblando un rompecabezas único con nuestras alegrías, errores, sueños y humores, donde cada pieza revela más de nosotros. Al saber que nos casaríamos tan jóvenes, me costaba creerlo. Pero aquí estamos, más unidos que nunca, con un amor tan profundo que eclipsa nuestra edad.
+Sí, tenemos defectos. Pero quiero que sepas que te amo tal como eres. Gracias por elegirme entre todas las opciones que tenías. Aprecio tu cariño, aunque no siempre seas expresiva; tus acciones hablan más fuerte que las palabras. En ellas reconozco tu amor diario.Gracias por tantos instantes hermosos: risas compartidas, silencios cómodos y sueños tejidos entre los dos. Es en los pequeños gestos cotidianos donde descubro el verdadero tesoro de esta relación, como cuando me regalas una mirada cómplice o me abrazas sin palabras.
+No hemos sido inmunes a las dificultades. A veces nuestros humores chocan, surgen errores o las metas se sienten distantes. Pero es precisamente en esos momentos donde crecemos. Como dice el principio “dos pasos hacia adelante, uno hacia atrás” en la narrativa romántica, nuestros altibajos van fortaleciendo nuestra unión.
+Me encanta estar contigo ya que cada día contigo representa una aventura y una oportunidad más para expandirnos mutuamente: aprendemos, soñamos, enfrentamos incertidumbres y celebramos logros por muy pequeños que sean estamos juntos.
+Imagino un camino recorrido con compromiso, transparencia y complicidad. Un futuro donde, pese a nuestra juventud, afrontamos responsabilidades de la mano, celebramos metas personales y cuidamos este amor con pequeños actos diarios. Así, nuestro rompecabezas seguirá completo, armando con paciencia y ternura la más bella historia que hayamos vivido.
+</p>
+                    
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/2.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">El plan perfecto</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name"></p>
+                    <h3 class="price__price"> Te amo</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Nuestro amor es un rompecabezas exclusivo, con piezas únicas que encajan entre sí de manera especial. Cada día añadimos una pieza: puede ser una risa, una discusión, un logro o un gesto de cariño. Con paciencia, vamos descubriendo cómo encajar esas piezas, llenando espacios del corazón que antes estaban vacíos.No siempre las piezas encajan a la primera; hay que girarlas, probarlas, darse un paso atrás y volver a intentarlo. Eso es lo que hace que nuestro vínculo sea unico: no buscamos la perfección, sino la construcción paciente y conjunta de algo valioso.
+Hay días en que las piezas parecen no corresponder; tal vez un mal humor, una meta divergente o un momento de tensión. Pero esos fragmentos, aunque complejos, también forman parte del cuadro completo. Sin ellos, nuestra imagen no estaría completa, no tendría profundidad ni sentido. Lo imperceptible, lo pequeño, incluso lo roto, cuenta.
+Como en un rompecabezas, no vemos la imagen completa hasta que encajamos muchas piezas. Ese es nuestro camino: día tras día, se revela cómo queda el cuadro que estamos formando juntos.
+</p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name"></p>
+                    <h3 class="price__price">Crecer con cada pieza</h3>
+
+                    <div class="price__items">
+                        <p class="price__features"></p>
+                        <p class="price__features">Cada pieza que colocamos —un perdón, un abrazo, una meta alcanzada— nos enseña algo. Nos une. Nos hace crecer como personas y como pareja. Como un rompecabezas que va cobrando forma, nuestra historia se fortalece y adquiere sentido con cada fragmento añadido.
+Te amo mi gordita, eres la pieza que faltaba en mi rompecabezas de la vida.
+A ti te elijo hoy, mañana y siempre con cada día que pasa mi amor por ti se hace mas fuerte que nunca.
+</p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name"></p>
+                    <h3 class="price__price">Quizá mis pocas palabras no llenen tus expectativas</h3>
+
+                    <div class="price__items">
+                        <p class="price__features"><br>
+                            
+                        </p>
+                      
+                        <p class="price__features">Gracias por estar a mi lado, por tu sonrisa que alumbra mis mañanas y por tu mano firme en mis momentos inciertos.
+Eres el amor de mi vida.
+</p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                    </div>
+
+                    
+
+
+            </div>
+        
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">NUESTRO ANIVERSARIO</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    
+                </ul>
+            </nav>
+
+            
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+               
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Jesler Mazariegos</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
